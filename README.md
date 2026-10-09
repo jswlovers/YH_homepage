@@ -2,6 +2,8 @@
 
 패션 디자인 포트폴리오 홈페이지. Next.js(App Router) + Tailwind CSS 기반.
 
+추가 운영/배포 안내: [MANUAL.md](MANUAL.md)
+
 - **공개 페이지 (`/`)**: 만든 디자인을 전시하고, 이메일로 문의를 받는 갤러리.
 - **개인 비서 (`/assistant`)**: 비밀번호로 보호된 페이지. 로그인하면 `/assistant/chat`에서
   Claude(Anthropic API) 기반 AI 어시스턴트와 대화하며 컬렉션 컨셉, 무드보드, 소재/컬러

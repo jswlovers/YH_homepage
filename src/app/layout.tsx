@@ -42,8 +42,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           </Link>
         </header>
         <div className="flex-1">{children}</div>
-        <footer className="px-6 py-8 text-center text-xs text-neutral-400">
-          © {new Date().getFullYear()} YH. All designs shown are original work.
+        <footer className="flex flex-col items-center gap-3 border-t border-neutral-200 px-6 py-8 text-xs text-neutral-400 dark:border-neutral-800 sm:flex-row sm:justify-between">
+          <span>© {new Date().getFullYear()} YH. All designs shown are original work.</span>
+          <nav aria-label="정책 문서" className="flex gap-4">
+            <Link href="/terms" className="hover:text-neutral-900 dark:hover:text-neutral-100">이용약관</Link>
+            <Link href="/privacy" className="hover:text-neutral-900 dark:hover:text-neutral-100">개인정보처리방침</Link>
+          </nav>
         </footer>
       </body>
     </html>
